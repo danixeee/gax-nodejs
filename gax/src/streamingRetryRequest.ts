@@ -44,7 +44,7 @@ export function streamingRetryRequest(opts: streamingRetryRequestOptions) {
   if (opts.request === undefined) {
     try {
       // eslint-disable-next-line node/no-unpublished-require
-      opts.request = require('request');
+      opts.request = require('teeny-request');
     } catch (e) {
       throw new Error('A request library must be provided to retry-request.');
     }
